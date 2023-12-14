@@ -1,5 +1,5 @@
 #in this variable we also putting vallue here
-variable "instance_type" {
+variable "instance_type" {    --we can give any name here
     type = string
     default = "t2.micro"
   
