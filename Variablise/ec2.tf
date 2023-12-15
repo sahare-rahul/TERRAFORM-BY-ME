@@ -8,7 +8,7 @@ provider "aws" {
 
 resource "aws_instance" "my-instance" {
   ami           = data.aws_ami.ubuntu.id     
-  instance_type = var.instance_type        -----any varialbe call like that first allways put "var."
+  instance_type = var.instancetype        -----any varialbe call like that first allways put "var."
 
   tags = {
     Name = "HelloWorld"
