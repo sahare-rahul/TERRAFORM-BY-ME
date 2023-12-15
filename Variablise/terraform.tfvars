@@ -1,1 +1,2 @@
-instance_type = "t2.micro"
+instancetype = "t2.micro"
+[upper variable-name and variable define name in variable file should be same] 
