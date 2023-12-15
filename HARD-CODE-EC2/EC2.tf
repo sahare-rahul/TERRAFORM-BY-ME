@@ -1,7 +1,7 @@
 provider "aws" {
   region     = "us-east-1"
-  access_key = "AKIAZVLFURYR65MVFFG5"
-  secret_key = "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"
+  access_key = ""
+  secret_key = ""
 }
 
 #creating aws_instance
