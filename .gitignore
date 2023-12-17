@@ -2,4 +2,9 @@ file2
 file3
 file4
 .terraform
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+
+
 
