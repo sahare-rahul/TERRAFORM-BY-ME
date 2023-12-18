@@ -1,7 +1,7 @@
 # provider "aws" {
 #   region     = "us-east-"
-#   access_key = "AKIAZVLFURYRU5S73R4L"
-#   secret_key = "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"
+#   access_key = ""
+#   secret_key = ""
 # }
 
 #creating ec2 by calling  variale of instance type , we can variablise most of parameters passing in block of "aws_instance"
