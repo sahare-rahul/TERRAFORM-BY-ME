@@ -1,7 +1,7 @@
 provider "aws" {
   region     = "us-east-1"
-  access_key = "AKIAZVLFURYRS7HDM3OE"
-  secret_key = "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"
+  access_key = ""
+  secret_key = ""
 }
 
 # Creating one VPC
@@ -19,7 +19,7 @@ resource "aws_vpc" "my_vpc" {
 resource "aws_subnet" "public_subnet1" {
   vpc_id     = aws_vpc.my_vpc.id
   cidr_block = "10.0.1.0/24"
-  map_public_ip_on_launch = "true"
+  map_public_ip_on_launch = "true"   -----this required to assign public ip to instance ,which will be launch in public_subnete1
 
   tags = {
     Name = "public_subnet1"
