@@ -4,7 +4,7 @@ variable "instancetype" {    --we can give any name here
     default = "t2.micro"
   
 }
-#second way we only varialise here and value will pick from terraform.tfvars
+#second way we only varialise here and value will pick from terraform.tfvars    -
 variable "instancetype" {
   type = string
 }
