@@ -16,13 +16,12 @@ resource "aws_subnet" "public_subnet" {
   vpc_id     = aws_vpc.my_vpc.id
   cidr_block = element(var.public_subnets_cidrs, count.index)
   map_public_ip_on_launch = true
-  availability_zone = data.aws_availability_zones.example.names[count.index]
+  availability_zone = data.aws_availability_zones.example.names[count.index]   ----here passing data source with data.
 
   tags = {
-    Name = "public_subnet-${data.aws_availability_zones.example.names[count.index]}"
-  }
-}
-
+    Name = "public_subnet-${data.aws_availability_zones.example.names[count.index]}"   ----here we are giving tag piblic_subnet with making variable to 
+}                                                                                          data.aws_availability_zones.example.names[count.index] and attaching by
+                                                                                            -${} 
 #Creating internate-gateway
 resource "aws_internet_gateway" "internet_gateway" {
   vpc_id = aws_vpc.my_vpc.id
