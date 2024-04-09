@@ -9,9 +9,7 @@ resource "aws_s3_bucket" "my_s3_bucket" {
   }
 }
 
-
-
-
+# Now we creating following to store state file in upper created s3 buckets
 
 terraform {
   backend "s3" {
