@@ -1,6 +1,6 @@
 provider "aws" {
-  region     = "us-west-2"
-  access_key = "my-access-key" 
+  region     = "us-west-2"       #if here we change the regions then data-source automaticaly fetch t ami-id form that regions to creat instance do dnont need to 
+  access_key = "my-access-key"     ami-id mannualy.
   secret_key = "my-secret-key"
 }
 
