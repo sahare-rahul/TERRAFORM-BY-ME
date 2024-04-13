@@ -41,5 +41,5 @@ data "aws_ami" "ubuntu" {
 
 module "ec2" {
     source = "./all-n
-    instance-type = "t2.micro"
-}
+    instance-type = "t2.micro"      # whichever parameter we variblise in varible.tf with name should be same in module for ex. upper we 
+}                                     variablise "instance-type" it same in module
